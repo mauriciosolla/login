@@ -13,35 +13,32 @@
     <name>loginWeb</name>
     <url>http://maven.apache.org</url>
 
-
-
-
-        <build>
-            <pluginManagement>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-compiler-plugin</artifactId>
-                        <version>3.2</version>
-                        <configuration>
-                            <source>1.7</source>
-                            <target>1.7</target>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-war-plugin</artifactId>
-                        <version>2.4</version>
-                        <configuration>
-                            <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                            <warName>loginWeb</warName>
-                            <failOnMissingWebXml>false</failOnMissingWebXml>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </pluginManagement>
-            <finalName>loginWeb</finalName>
-        </build>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.2</version>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                    <configuration>
+                        <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                        <warName>loginWeb</warName>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <finalName>loginWeb</finalName>
+    </build>
 
     <properties>
         <springframework.version>4.3.5.RELEASE</springframework.version>

@@ -16,10 +16,6 @@ public class User implements UserDetails {
     private String username;
     private String password;
 
-    public User () {
-
-    }
-
     List<GrantedAuthority> authorityList;
 
     public Integer getId() {

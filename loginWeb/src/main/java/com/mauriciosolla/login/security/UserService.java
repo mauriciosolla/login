@@ -14,7 +14,7 @@ public class UserService implements UserDetailsService{
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        User user = null;
+        User user = new User();
 
         if (username != null && !username.equals("")) {
 
@@ -22,7 +22,7 @@ public class UserService implements UserDetailsService{
             String userSimulation = "user123";
             if (userSimulation.equals(username)) {
 
-                new User();
+                user = new User();
                 user.setId(999);
                 user.setName("User");
                 user.setUsername(userSimulation);
